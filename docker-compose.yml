@@ -47,11 +47,11 @@ services:
     environment:
       POSTGRES_PASSWORD: "rinha2023"
       POSTGRES_USER: "userrinha"
-      POSTGRES_DB: "db"
+      POSTGRES_DB: "mydb"
     ports:
       - "5432:5432"
-    volumes:
-      - rinha-db-data:/var/lib/postgresql/data
+    # volumes:
+    #   - rinha-db-data:/var/lib/postgresql/data
     networks:
       - internalnetwork
 
