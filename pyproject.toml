@@ -8,6 +8,11 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+fastapi = "^0.104.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+sqlalchemy = "^2.0.22"
+pydantic-settings = "^2.0.3"
+psycopg2-binary = "^2.9.9"
 
 [tool.poetry.group.dev]
 optional = true
@@ -20,6 +25,8 @@ black = "^23.10.0"
 pytest-cov = "^4.1.0"
 mypy = "^1.6.1"
 coverage-badge = "^1.1.0"
+alembic = "^1.12.1"
+flake8 = "^6.1.0"
 
 [build-system]
 requires = ["poetry-core"]
